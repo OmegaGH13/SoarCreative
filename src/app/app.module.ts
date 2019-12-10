@@ -7,6 +7,8 @@ import { BookComponent } from './book/book.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { ClientViewComponent } from './client-view/client-view.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { ClientViewComponent } from './client-view/client-view.component';
     BookComponent,
     ContactComponent,
     LoginComponent,
-    ClientViewComponent
+    ClientViewComponent,
+    MainPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
