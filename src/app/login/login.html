@@ -1,0 +1,52 @@
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+  
+</script>
+</head>
+<body>
+    <div class= 'hero'>
+        <div class='form-box'>
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type='button' class='toggle-btn' onclick='client()'>Client</button>
+            <button type='button' class='toggle-btn' onclick='user()'>User</button>
+        </div>
+        <!-- //Client Form -->
+        <form id='client' class="input-group">
+        <input type='text' class="input-field" placeholder='Email' id='email' required>
+        <input type='text' class="input-field" placeholder='Password' id='password' required>
+        <input type='checkbox' class="checkbox" ><span>Remember Password</span>
+        <button type="login" class="login-btn">Login</button>
+        
+        </form>
+        <!-- //User Form -->
+        <form id='user' class="input-group">
+                <input type='text' class="input-field" placeholder='Name' required>
+                <input type='text' class="input-field" placeholder='Email' id='email' required>
+                <input type='text' class="input-field" placeholder='Password' id='password' required>
+                <input type='checkbox' class="checkbox" ><span>I agree to the terms & conditions.</span>
+                <button type="submit" class="submit-btn">Register</button>
+                <button type="create-login" class="create-login">Create Login</button>
+                </form>  
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById('client')
+        var y = document.getElementById('user')
+        var z = document.getElementById('btn')
+
+        function user(){
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function client(){
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+
+</body>
